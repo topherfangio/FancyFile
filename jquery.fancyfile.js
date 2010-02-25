@@ -49,7 +49,6 @@ function FancyFile(file_input) {
 		}, options);
 
 		return this.each(function() {
-			console.log('creating FancyFile on ' + $(this));
 			new FancyFile($(this), settings);
 		});
 
