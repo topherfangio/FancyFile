@@ -26,8 +26,18 @@ function FancyFile(i, file_input, settings) {
 		'top':'0px',
 		'left':'0px',
 		'z-index':'0'
-	}).width(file_input.outerWidth() - button.outerWidth() - parseInt(button.css('margin-left')));
+	});
 	file_input.before(text_field);
+
+  var text_field_width = file_input.outerWidth(true) - button.outerWidth(true)
+    - parseInt(text_field.css('border-left-width'))
+    - parseInt(text_field.css('border-right-width'))
+    - parseInt(text_field.css('padding-left'))
+    - parseInt(text_field.css('padding-right'));
+  var button_x = text_field.outerWidth(true) - parseInt(button.css('margin-left'));
+
+  file_input.prev().width(text_field_width);
+  file_input.prev().prev().css({'left':button_x + 'px'});
 
 	// Style the file input
 	file_input.css({
