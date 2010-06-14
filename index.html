@@ -2,79 +2,112 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>topherfangio/FancyFile @ GitHub</title>
-	
-	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #ffffff;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-		h1 { font-size: 3.8em; color: #000000; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #000000; }
-    h3 { text-align: center; color: #000000; }
-    a { color: #000000; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
-	
-</head>
+    <title>topherfangio/FancyFile @ GitHub</title>
 
-<body>
-  <a href="http://github.com/topherfangio/FancyFile"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+    <script type='text/javascript' src='http://www.google.com/jsapi'></script>
+    <script type='text/javascript'> google.load("jquery", "1"); </script>
+    <script type='text/javascript' src='jquery.fancyfile.js'></script>
 
-  <div id="container">
+    <link rel='stylesheet' href='jquery.fancyfile.css' />
+    
+    <style type="text/css">
+      body {
+        margin-top: 1.0em;
+        background-color: #ffffff;
+        font-family: "Helvetica,Arial,FreeSans";
+        color: #000000;
+      }
+      #container {
+        margin: 0 auto;
+        width: 700px;
+      }
+      h1 { font-size: 3.8em; color: #000000; margin-bottom: 3px; }
+      h1 .small { font-size: 0.4em; }
+      h1 a { text-decoration: none }
+      h2 { font-size: 1.5em; color: #000000; }
+      h3 { text-align: center; color: #000000; }
+      a { color: #000000; }
+      .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+      .download { float: right; }
+      pre { background: #000; color: #fff; padding: 15px;}
+      hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+      .footer { text-align:center; padding-top:30px; font-style: italic; }
+    </style>
+    
+  </head>
 
-    <div class="download">
-      <a href="http://github.com/topherfangio/FancyFile/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/topherfangio/FancyFile/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+  <body>
+    <a href="http://github.com/topherfangio/FancyFile">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+    </a>
+
+    <div id="container">
+
+      <div class="download">
+        <a href="http://github.com/topherfangio/FancyFile/zipball/master"><img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+        <a href="http://github.com/topherfangio/FancyFile/tarball/master"><img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+      </div>
+
+      <h1>
+        <a href="http://github.com/topherfangio/FancyFile">FancyFile</a>
+        <span class="small">by <a href="http://github.com/topherfangio">topherfangio</a></span>
+      </h1>
+
+      <div class="description">
+        A jQuery plugin that replaces a regular file input with a text input and a button that you can style to your hearts content.
+      </div>
+
+      <h2>Authors</h2>
+      <p>Topher Fangio (fangiotophia@gmail.com)</p>
+
+
+      <h2>Contact</h2>
+      <p>Topher Fangio (fangiotophia@gmail.com)</p>
+
+
+      <h2>Demonstration</h2>
+      <p>
+        <label>Standard File Input:</label>
+        <input id='standard_file_input' type='file' name='standard_file_input' /><br />
+        <input id='standard_file_input_2' type='file' name='standard_file_input' />
+      </p>
+
+      <p>
+        <label>File Input with Specific Width:</label>
+        <input id='width_file_input' type='file' name='width_file_input' />
+      </p>
+
+      <script type='text/javascript'>
+        $(document).ready(function(){
+          $('#standard_file_input').fancyfile();
+          $('#width_file_input').fancyfile({'width':'400px'});
+        });
+      </script>
+
+
+      <h2>Usage</h2>
+
+
+      <h2>Download</h2>
+      <p>
+        You can download this project in either
+        <a href="http://github.com/topherfangio/FancyFile/zipball/master">zip</a> or
+        <a href="http://github.com/topherfangio/FancyFile/tarball/master">tar</a> formats.
+      </p>
+
+      <p>
+        You can also clone the project with <a href="http://git-scm.com">Git</a> by running:
+        <pre>$ git clone git://github.com/topherfangio/FancyFile</pre>
+      </p>
+
+      <div class="footer">
+        get the source code on GitHub : <a href="http://github.com/topherfangio/FancyFile">topherfangio/FancyFile</a>
+      </div>
+
     </div>
 
-    <h1><a href="http://github.com/topherfangio/FancyFile">FancyFile</a>
-      <span class="small">by <a href="http://github.com/topherfangio">topherfangio</a></span></h1>
-
-    <div class="description">
-      A jQuery plugin that replaces a regular file input with a text input and a button that you can style to your hearts content.
-    </div>
-
-    <h2>Authors</h2>
-<p>Topher Fangio (fangiotophia@gmail.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Topher Fangio (fangiotophia@gmail.com)<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/topherfangio/FancyFile/zipball/master">zip</a> or
-      <a href="http://github.com/topherfangio/FancyFile/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/topherfangio/FancyFile</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/topherfangio/FancyFile">topherfangio/FancyFile</a>
-    </div>
-
-  </div>
-
-  
-</body>
+  </body>
 </html>

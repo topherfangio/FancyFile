@@ -1,0 +1,27 @@
+div.jquery_fancyfile_wrapper {
+	/*
+		 In general this should be left blank unless you specifically want to style the wrapping div.
+	 */
+}
+
+/*
+	 Since the FancyFile inputs are standard inputs, they will inherit all of the same CSS styles
+	 of your inputs (type=text and type=button).
+ */
+
+input.jquery_fancyfile_text_field {
+}
+
+input.jquery_fancyfile_button {
+	/*
+		 Use to center the button with respect to the text field. Sadly, this may need to be different in
+	   different browsers.
+	 */
+	top: 2px;
+
+
+	/*
+		IMPORTANT: This value is used by the plugin to determine the width of the text field
+	 */
+	margin-left: 5px;
+}
